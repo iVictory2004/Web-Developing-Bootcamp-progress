@@ -118,10 +118,6 @@
             </table>
         </section>
 
-
-
-
-
         <hr>
         <nav>
             <h1>Chestii care ne-au adus mai aproape</h1>
@@ -174,8 +170,88 @@
             Fac poveste Mari Și Lată <br>
             <aside> <mark>(ține minte Victor sa continui)</mark></aside>
         </article>
+
         <hr>
 
+        <section>
+            <h1>Heyy ia spune-mi de care pizza ai vrea si ce culoare sa fiee <sup>(completeaza numele parola si data ca
+                    sa faci cont)</sup>
+            </h1>
+            <form action="/pizza">
+                <p>
+                    <label for="nume">Click pt nume</label>
+                    <input id='nume' placeholder="Numele lu bebee" type='text' name="nume">
+                </p>
+                <p>
+                    <label for="parola">Click pentr parola</label>
+                    <input id='parola' placeholder="parola lui bebe" type='password' name='parola'>
+                </p>
+                <p>
+                    <label for="zi">Click pt ziua de nastere </label>
+                    <input name="zi" id="zi" placeholder="Ziua lui bebelus" type='date'> <button type="button">Buton
+                        care nu face
+                        nimic</button>
+                </p>
+                <p>
+                    <label for="numar"> Cate pizze? </label>
+                    <input name="numar" id="numar" placeholder="numarul de pizze" type='number'>
+                </p>
+                <p>
+                    <label for="telefon">Click pentru numar</label>
+                    <input name="telefon" id="telefon" placeholder="numarul lui bebe ;)" type="tel"
+                        pattern="+[0-9]{2} [0-9]{4} [0-9]{3} [0-9]{3}">
+                    <smal>Format: +01 2345 678 900</smal>
+                </p>
+                <p>
+                    <label for="culoare">Click pentru culoare pizzei? <br> nu stiu am gasit tipul asta de buton pe <a
+                            target="_blank"
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color">MDN</a>
+                    </label>
+                    <input name="culoare" type="color" name="" id="culoare">
+                </p>
+                <!-- <input type='datetime'> fara asta ca cica e absolete si nu mai foloseste nimeni (ii da
+                efectiv thumbs down si trash emoji astia de la Mozzila =))))) -->
+                <button>BOOM shakalaka</button>
+            </form>
+        </section>
+        <hr>
+
+        <H2>Mai multe inputuri</H2>
+        <form action="/lovesong">
+            <h3>Ia spune de fel de melodie ai avea chef?</h3>
+
+            <label for="love">De iubiree<label>
+                    <input checked type="checkbox" name="love" id="love">
+                    <label for="iubiricaa">De <b>iubiricaaa</b> ;))</label>
+                    <input type="checkbox" name="iubiricaa" id="iubiricaa" checked>
+                    <label for="happy">Fericita</label>
+                    <input type="checkbox" name="happy" id="happy">
+                    <label for="sad">Tristuta</label>
+                    <input type="checkbox" name="sad" id="sad">
+        </form>
+
+        <nav>
+            <h3>Mama de cand timp incerc sa fac rahaturiile astea sa mearga si era asa de simpluu</h3>
+            <form action="https://www.youtube.com/results">
+                <input type="text" name='search_query' placeholder="Cauta pe youtube ceva">
+                <button>Cauta pe Youtube</button>
+            </form>
+            <form action="https://www.reddit.com/search/">
+                <input type="text" name="q" placeholder="Cauta pe reddit">
+                <button>Cauta redditul</button>
+            </form>
+            <form action="https://www.google.com/search">
+                <input type="text" name="q" placeholder="Cauta pe google">
+                <button>Cauta Googleul</button>
+            </form>
+
+            <form action="https://www.facebook.com/search">
+                <input placeholder="Cauta pe facebuci" type="text" name="q" id="">
+                <button>Cauta pe facebook</button>
+            </form>
+
+        </nav>
+        <hr>
     </main>
     <div>
         <h2> Aici testez poze si atribute pentru poze =))</h2>
@@ -183,13 +259,13 @@
             <figcaption>Un bebelus cu fătul ei</figcaption>
         </figure>
         <!-- NU DA ATRIBUTE DE MARIME DIRECT DIN HTML CA CICA E BAD PRATICE -->
-        <img src='https://upload.wikimedia.org/wikipedia/commons/0/09/BabyTVSeries.png'>
+        <img src=' https://upload.wikimedia.org/wikipedia/commons/0/09/BabyTVSeries.png'>
     </div>
     <footer>
         <h3>Secțiunea de contact</h3>
         <ul>
             <li><a target="_blank" href="https://www.youtube.com/channel/UCt-q5MDlKcERA6WZ7LmGFHQ">Sună-ma ;)</a></li>
-            <!-- Nu uita sa pui un link custom aici care in loc sa o duca pe numarul, SAU pe canalul meu/ tau, sa o duca pe canalul tau unde scrie sus "HEY, ce? crezi ca ti-l dadeam asa? trebuia sa l stii tuu, acum scrie aici numarul meu ca sa primesti o surpriza speciala;))" si supriza e cupon pentru toata bershka pentru un an sau ceva -->
+            <!-- Nu uita sa pui un link custom care scrie pe el ca daca dai click o sa vezi nr de tel aici care in loc sa o duca pe numarul, SAU pe canalul meu/ tau, sa o duca pe canalul tau unde scrie sus "HEY, ce? crezi ca ti-l dadeam asa? trebuia sa l stii tuu, acum scrie aici numarul meu ca sa primesti o surpriza speciala;))" si supriza e cupon pentru toata bershka pentru un an sau ceva -->
 
         </ul>
     </footer>

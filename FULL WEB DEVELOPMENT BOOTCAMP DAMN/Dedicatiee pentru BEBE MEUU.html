@@ -188,6 +188,7 @@
             </h1>
             <form action="/pizza">
                 <p>
+                <div>
                     <label for="marime">Cat de mare vrei pizza?</label> <br>
                     <input type="radio" value="X" name="marime" id="X">
                     <label for="X">X</label>
@@ -198,38 +199,63 @@
                     <input value="XXL" type="radio" name="marime" id="XXL">
                     <label for="XXL">XXLL</label>
 
-                </p>
-                <p>
-                    <label for="numar"> Cate pizze? </label>
-                    <input name="numar" id="numar" placeholder="minim 10" type='number' min=10 max=99999 step=100>
-                </p>
+                    </p>
+                    <p>
+                        <label for="numar"> Cate pizze? </label>
+                        <input name="numar" id="numar" placeholder="minim 10" type='number' min=10 max=99999 step=100>
+                    </p>
 
-                <p>
-                    <label for="topping-type">Tipul toppingului</label>
-                    <select name="topping-type" id="topping-type">
-                        <option value="">--Selecteaza topingul tepap--</option>
-                        <option value='branza'>Branza</option>
-                        <option value='cascaval'>Cascaval</option>
-                        <option value='ceva-comestibil'>Ceva comestibil</option>
+                    <p>
+                        <label for="topping-type">Tipul toppingului</label>
+                        <select name="topping-type" id="topping-type">
+                            <option value="">--Selecteaza topingul tepap--</option>
+                            <option value='branza'>Branza</option>
+                            <option value='cascaval'>Cascaval</option>
+                            <option value='ceva-comestibil'>Ceva comestibil</option>
 
-                    </select>
-                </p>
+                        </select>
+                    </p>
 
-                <p>
-                    <label for="topping-ammount">Cat de mult toping?</label>
-                    0 <sub> <input type="range" name="topping-ammount" id="topping-ammount" min="0" max="100" step='5'
-                            value="10"></sub>
-                    100 (grame
-                    cred)
-                </p>
-                <!-- fa ceva cu checkboxes care nu sunt radio aici ca ar merge si sa stii si tu ce drq faci -->
-                <p>
-                    <label for="culoare">Click pentru culoare pizzei? <br> nu stiu am gasit tipul asta de buton pe
-                        <a target="_blank"
-                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color">MDN</a>
-                    </label>
-                    <input name="culoare" type="color" name="" id="culoare">
-                </p>
+                    <p>
+                        <label for="topping-ammount">Cat de mult toping?</label>
+                        0 <sub> <input type="range" name="topping-ammount" id="topping-ammount" min="0" max="100"
+                                step='5' value="10"></sub>
+                        100 (grame
+                        cred)
+                    </p>
+                    <!-- fa ceva cu checkboxes care nu sunt radio aici ca ar merge si sa stii si tu ce drq faci -->
+                    <p>
+                        <label for="culoare">Click pentru culoare pizzei? <br> nu stiu am gasit tipul asta de buton pe
+                            <a target="_blank"
+                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color">MDN</a>
+                        </label>
+                        <input name="culoare" type="color" name="" id="culoare">
+                    </p>
+
+                    <fieldset>
+                        <div>
+                            <legend>Vrei si Handcuffuri la comanda?</legend>
+                            <label for="yes">Da</label>
+                            <input type="radio" value='yes' name="choice" id="yes">
+                            <label for="no">Nu</label>
+                            <input type='radio' value='no' name="choice" id="no">
+                        </div>
+                        <div> Daca da, ce brand vrei sa fie? <br>
+                            <label for="emag">Emag</label>
+                            <input type="checkbox" value="emag" name="brand" id="emag">
+                            <label for="asp">Asp</label>
+                            <input type="checkbox" value="asp" name="brand" id="asp">
+                            <label for="chicago">Chicago</label>
+                            <input type="checkbox" value="chicago" name="brand" id="chicago">
+                            <label for="errotica">Errotica</label>
+                            <input type="checkbox" value="errotica" name="brand" id="errotica">
+                            <input type="checkbox" value="" name="brand" id="">
+                            <input type="checkbox" value="" name="brand" id="">
+                            <input type="checkbox" value="" name="brand" id="">
+                        </div>
+                    </fieldset>
+
+                </div>
                 <div>
                     <p>
                         <label for="nume">Click pt nume</label>

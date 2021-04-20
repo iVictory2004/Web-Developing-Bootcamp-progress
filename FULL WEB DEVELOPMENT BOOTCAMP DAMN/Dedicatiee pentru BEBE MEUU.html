@@ -181,48 +181,85 @@
 
             <aside> <mark>(ține minte Victor sa continui)</mark></aside>
         </article>
-
         <hr>
-
         <section>
             <h1>Heyy ia spune-mi de care pizza ai vrea si ce culoare sa fiee <sup>(completeaza numele parola si data ca
                     sa faci cont)</sup>
             </h1>
             <form action="/pizza">
                 <p>
-                    <label for="nume">Click pt nume</label>
-                    <input id='nume' placeholder="Numele lu bebee" type='text' name="nume">
-                </p>
-                <p>
-                    <label for="parola">Click pentr parola</label>
-                    <input id='parola' placeholder="parola lui bebe" type='password' name='parola'>
-                </p>
-                <p>
-                    <label for="zi">Click pt ziua de nastere </label>
-                    <input name="zi" id="zi" placeholder="Ziua lui bebelus" type='date'> <button type="button">Buton
-                        care nu face
-                        nimic</button>
+                    <label for="marime">Cat de mare vrei pizza?</label> <br>
+                    <input type="radio" value="X" name="marime" id="X">
+                    <label for="X">X</label>
+                    <br>
+                    <input value="XL" type="radio" name="marime" id="XL">
+                    <label for="XL">XL</label>
+                    <br>
+                    <input value="XXL" type="radio" name="marime" id="XXL">
+                    <label for="XXL">XXLL</label>
+
                 </p>
                 <p>
                     <label for="numar"> Cate pizze? </label>
-                    <input name="numar" id="numar" placeholder="numarul de pizze" type='number'>
+                    <input name="numar" id="numar" placeholder="minim 10" type='number' min=10 max=99999 step=100>
                 </p>
+
                 <p>
-                    <label for="telefon">Click pentru numar</label>
-                    <input name="telefon" id="telefon" placeholder="numarul lui bebe ;)" type="tel"
-                        pattern="+[0-9]{2} [0-9]{4} [0-9]{3} [0-9]{3}">
-                    <smal>Format: +01 2345 678 900</smal>
+                    <label for="topping-type">Tipul toppingului</label>
+                    <select name="topping-type" id="topping-type">
+                        <option value="">--Selecteaza topingul tepap--</option>
+                        <option value='branza'>Branza</option>
+                        <option value='cascaval'>Cascaval</option>
+                        <option value='ceva-comestibil'>Ceva comestibil</option>
+
+                    </select>
                 </p>
+
                 <p>
-                    <label for="culoare">Click pentru culoare pizzei? <br> nu stiu am gasit tipul asta de buton pe <a
-                            target="_blank"
+                    <label for="topping-ammount">Cat de mult toping?</label>
+                    0 <sub> <input type="range" name="topping-ammount" id="topping-ammount" min="0" max="100" step='5'
+                            value="10"></sub>
+                    100 (grame
+                    cred)
+                </p>
+                <!-- fa ceva cu checkboxes care nu sunt radio aici ca ar merge si sa stii si tu ce drq faci -->
+                <p>
+                    <label for="culoare">Click pentru culoare pizzei? <br> nu stiu am gasit tipul asta de buton pe
+                        <a target="_blank"
                             href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color">MDN</a>
                     </label>
                     <input name="culoare" type="color" name="" id="culoare">
                 </p>
+                <div>
+                    <p>
+                        <label for="nume">Click pt nume</label>
+                        <input id='nume' placeholder="Numele lu bebee" type='text' name="nume">
+                    </p>
+                    <p>
+                        <label for="parola">Click pentr parola</label>
+                        <input id='parola' placeholder="parola lui bebe" type='password' name='parola'>
+                    </p>
+                    <p>
+                        <label for="zi">Click pt ziua de nastere </label>
+                        <input name="zi" id="zi" placeholder="Ziua lui bebelus" type='date'> <button type="button">Buton
+                            care nu face
+                            nimic</button>
+                    </p>
+                    <p>
+                        <label for="telefon">Click pentru numar</label>
+                        <input name="telefon" id="telefon" placeholder="numarul lui bebe ;)" type="tel"
+                            pattern="+[0-9]{2} [0-9]{4} [0-9]{3} [0-9]{3}">
+                        <smal>Format: +01 2345 678 900</smal>
+                    </p>
+                    <p>
+                        <label for="requests">Ceva special pentru cand vine <b>curierul ;)</b> cumva?</label> <br>
+                        <textarea name="" id="requests" cols="20" rows="10" placeholder="Ceva special?"></textarea>
+                    </p>
+                </div>
+
                 <!-- <input type='datetime'> fara asta ca cica e absolete si nu mai foloseste nimeni (ii da
                 efectiv thumbs down si trash emoji astia de la Mozzila =))))) -->
-                <button>BOOM shakalaka</button>
+                <button>BOOM shakalaka comand-o acm</button>
             </form>
         </section>
         <hr>

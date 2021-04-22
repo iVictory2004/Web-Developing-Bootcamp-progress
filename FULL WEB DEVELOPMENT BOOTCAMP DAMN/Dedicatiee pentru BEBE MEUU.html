@@ -198,13 +198,11 @@
                     <br>
                     <input value="XXL" type="radio" name="marime" id="XXL">
                     <label for="XXL">XXLL</label>
-
                     </p>
                     <p>
                         <label for="numar"> Cate pizze? </label>
                         <input name="numar" id="numar" placeholder="minim 10" type='number' min=10 max=99999 step=100>
                     </p>
-
                     <p>
                         <label for="topping-type">Tipul toppingului</label>
                         <select name="topping-type" id="topping-type">
@@ -212,9 +210,9 @@
                             <option value='branza'>Branza</option>
                             <option value='cascaval'>Cascaval</option>
                             <option value='ceva-comestibil'>Ceva comestibil</option>
-
                         </select>
                     </p>
+
 
                     <p>
                         <label for="topping-ammount">Cat de mult toping?</label>
@@ -231,30 +229,19 @@
                         </label>
                         <input name="culoare" type="color" name="" id="culoare">
                     </p>
-
-                    <fieldset>
-
-                        <legend>Vrei si Handcuffuri la comanda?</legend>
-                        <label for="yes">Da</label>
-                        <input type="radio" value='yes' name="choice" id="yes">
-                        <label for="no">Nu</label>
-                        <input type='radio' value='no' name="choice" id="no">
-                        <div> Daca da, ce brand vrei sa fie? <br>
-                            <label for="emag">Emag</label>
-                            <input type="checkbox" value="emag" name="brand" id="emag">
-                            <label for="asp">Asp</label>
-                            <input type="checkbox" value="asp" name="brand" id="asp">
-                            <label for="chicago">Chicago</label>
-                            <input type="checkbox" value="chicago" name="brand" id="chicago">
-                            <label for="errotica">Errotica</label>
-                            <input type="checkbox" value="errotica" name="brand" id="errotica">
-                            <input type="checkbox" value="" name="brand" id="">
-                            <input type="checkbox" value="" name="brand" id="">
-                            <input type="checkbox" value="" name="brand" id="">
-                        </div>
-                    </fieldset>
-
                 </div>
+                <fieldset>
+                    <legend>Vrei kepap de peste?</legend>
+                    <div> <label for="da">a) Da</label><input type="radio" value="da" name="dasauda" id="da">
+                    </div>
+                    <div>
+                        <label for="nu">b) Da</label><input type="radio" value="al doilea da" name="dasauda" id="nu">
+                    </div>
+                    <div><label for="clarda">c): a) si b)</label><input type="checkbox" value="al treilea da"
+                            name="Clarda" id="clarda">
+                    </div>
+                </fieldset>
+
                 <div>
                     <p>
                         <label for="nume">Click pt nume</label>
@@ -282,14 +269,30 @@
                             placeholder="Ceva special?"></textarea>
                     </p>
                 </div>
-
                 <!-- <input type='datetime'> fara asta ca cica e absolete si nu mai foloseste nimeni (ii da
                 efectiv thumbs down si trash emoji astia de la Mozzila =))))) -->
+                <fieldset>
+                    <legend>Vrei si Handcuffuri la comanda?</legend>
+                    <label for="yes">Da</label>
+                    <input type="radio" value='yes' name="choice" id="yes">
+                    <label for="no">Nu</label>
+                    <input type='radio' value='no' name="choice" id="no">
+                    <div> Daca da, ce brand vrei sa fie? <br>
+                        <label for="emag">Emag</label>
+                        <input type="checkbox" value="emag" name="brand" id="emag">
+                        <label for="asp">Asp</label>
+                        <input type="checkbox" value="asp" name="brand" id="asp">
+                        <label for="chicago">Chicago</label>
+                        <input type="checkbox" value="chicago" name="brand" id="chicago">
+                        <label for="errotica">Errotica</label>
+                        <input type="checkbox" value="errotica" name="brand" id="errotica">
+                    </div>
+                </fieldset>
                 <button>BOOM shakalaka comand-o acm</button>
             </form>
         </section>
+        ce kkt e asta&nbsp;nu stiu
         <hr>
-
         <H2>Mai multe inputuri</H2>
         <form action="/lovesong">
             <h3>Ia spune de fel de melodie ai avea chef?</h3>
@@ -303,7 +306,6 @@
                     <label for="sad">Tristuta</label>
                     <input type="checkbox" name="sad" id="sad">
         </form>
-
         <nav>
             <h3>Mama de cand timp incerc sa fac rahaturiile astea sa mearga si era asa de simpluu</h3>
             <form action="https://www.youtube.com/results">
@@ -318,19 +320,17 @@
                 <input type="text" name="q" placeholder="Cauta pe google">
                 <button>Cauta Googleul</button>
             </form>
-
             <form action="https://www.facebook.com/search">
                 <input placeholder="Cauta pe facebuci" type="text" name="q" id="">
                 <button>Cauta pe facebook</button>
             </form>
-
         </nav>
         <hr>
     </main>
     <div>
         <h2> Aici testez poze si atribute pentru poze =))</h2>
         <figure> <img src="hollatta-red.jpg" alt="Me and my bebegirl">
-            <figcaption>Un bebelus cu fătul ei</figcaption>
+            <figcaption>Me and my bebegirl</figcaption>
         </figure>
         <!-- NU DA ATRIBUTE DE MARIME DIRECT DIN HTML CA CICA E BAD PRATICE -->
         <img src=' https://upload.wikimedia.org/wikipedia/commons/0/09/BabyTVSeries.png'>
@@ -340,7 +340,6 @@
         <ul>
             <li><a target="_blank" href="https://www.youtube.com/channel/UCt-q5MDlKcERA6WZ7LmGFHQ">Sună-ma ;)</a></li>
             <!-- Nu uita sa pui un link custom care scrie pe el ca daca dai click o sa vezi nr de tel aici care in loc sa o duca pe numarul, SAU pe canalul meu/ tau, sa o duca pe canalul tau unde scrie sus "HEY, ce? crezi ca ti-l dadeam asa? trebuia sa l stii tuu, acum scrie aici numarul meu ca sa primesti o surpriza speciala;))" si supriza e cupon pentru toata bershka pentru un an sau ceva -->
-
         </ul>
     </footer>
 </body>

@@ -6,7 +6,7 @@
   body {
     font-family: Minecraftia;
     text-align: center;
-    background-color: grey;
+    background-color: #fc8eabb0;
   }
 
 header {
@@ -17,16 +17,16 @@ text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 
 }
 
 h2, h4,h5 {
-    color: rebeccapurple ;
+    color:  #1361df;
   font-weight:  normal;
 letter-spacing: .15em;
-text-shadow: 1px -1px 0 #7676763a, -1px 2px 1px #7372721e, -2px 4px 1px #7674741f, -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #82818141, -7px 14px 1px #868585, -8px 16px 1px;
+text-shadow: 1px -1px 0 #7676763a, -1px 2px 1px #7372721e, -2px 4px 1px #7674741f;
 }
  
 h3 {
     font-weight: 800px;
     color: rebeccapurple ;
-   font-family: Brush Script MT;
+   font-family: Minecraftia;
   font-weight:  normal;
 letter-spacing: .15em;
 }
@@ -40,45 +40,133 @@ abbr {
 article {
     text-align: center;
     line-height: 40px;
-  font-size: 29px;
-  font-family: Minecraftia, Brush Script MT ;
+    font-size: 29px;
+    font-family: Minecraftia, Brush Script MT ;
 }
+
 
 a {
     color:rgb(50, 131, 168) ;
     font-weight: bold;
-   text-decoration: none ;
-   font-family: Garamond;
+  text-decoration: none;
 }
 
-body {
-    background-color: #fc8eabb0;
-}
+
+
 
 h1 {
-    text-align:left;
     width: 80%;
-    letter-spacing: 5px;
-
-    
+    letter-spacing: 5px;    
 }
 
-#pozainel {
-           width: 70%;
+img {
+    height: 30%;
+    width : 60%;
+    align-self: center;
 }
+
+button {
+    background-color: #bdb2ff ;
+}
+
 
 mark {
-    text-decoration:line-through ;
+    text-decoration: underline ;
 }
 
 footer {
     font-family: monospace, fantasy ;
 }
 
+
+
 sub {
     font-size: 8px;
 }
 
+h1+p {
+    text-align: start;
+}
+
+.centertext{ 
+    text-align: center;
+}
+
 input {
-text-decoration: wavy;
+    background-color: #ccfd9a;
+    color: #000;
+}
+
+textarea {
+    background-color: #dbeb4a;
+}
+
+.notcenter {
+    text-align:left;
+}
+
+.bghide {
+    background-color: inherit;
+}
+
+.dontmind {
+    font-size: normal;
+}
+
+#submit {
+    background-color: #caffbf;
+    background-color: #caffbf;
+}
+
+
+#melodie {
+    font-size: 30px;
+    font-family: Brush Script MT;
+}
+
+#pozainel {
+    width: 30%;
+    height: 30%;
+    object-position: 50% 50%;
+}
+
+#bday {
+    cursor: grab;
+}
+
+/* ul::marker {
+    text-align: right;
+} */
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: end;
+}
+
+table ul {
+    text-align: left;
+}
+
+::placeholder {
+    font-family: Minecraftia;
+    font-size: 85%;
+}
+
+ .superpink{
+    color: #ff007f;
+}
+
+#inceput p span {
+    text-decoration: overline underline wavy;
+}
+
+table>thead {
+    color: #3C3A3B ;
+}
+
+footer a {
+    color: red;
 }

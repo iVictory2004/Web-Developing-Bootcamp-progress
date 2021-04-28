@@ -10,11 +10,15 @@
 
     <header>
 
-        <h1> Bebeee fac pe fisierul asta tot cursul pentru tinee sa
-            vezii:DD</h1>
-        Bine ai venit pe pagina mea facuta cu ce stiu din bootcampu astaa, destul de simpla da nu e bai ca o sa fie
-        frumos si o sa vezi treptat cum evoluarez in timp ce ti dau parta probabil poate =))) <br><br>
-        <sub>omg asta e rosu ca <sub><sub>funduletul</sub>dupa</sub>bataie</sub>
+        <h1> <span class="superpink"> Bebeee </span> <span class="notcenter"> fac pe fisierul asta tot cursul pentru
+                tinee sa
+                vezii:DD</h1></span>
+        <p id='inceput'> Bine ai venit pe pagina mea facuta cu ce stiu din bootcampu astaa, destul de simpla da nu e bai
+            ca o sa fie
+            frumos si o sa vezi treptat cum evoluarez in timp ce ti dau parta probabil poate <span class="superpink">
+                =)))</span> <br><br>
+            <sub>omg asta e rosu ca <sub><sub>funduletul</sub>dupa</sub>bataie</sub>
+        </p>
         <hr>
     </header>
 
@@ -55,12 +59,12 @@
             <h2> Cele mai importante <b>dăți</b> (ordine cronologica)</h2>
             <table>
                 <thead>
-                    <tr>
+                    <tr class='centertext'>
                         <th rowspan="2">Data</th>
                         <th rowspan="2">Ce-am facut</th>
                         <th colspan="2"> Alinturi din perioada</th>
                     </tr>
-                    <tr>
+                    <tr class='centertext'>
                         <th>Cel mai comun?</th>
                         <th>Hot sau nah?</th>
                     </tr>
@@ -70,7 +74,7 @@
 
                     <tr>
 
-                        <th><time datetime='2020-02-02'>2 Februarie</time></td>
+                        <th class='centertext'><time datetime='2020-02-02'>2 Februarie</time></td>
                         <td>
 
                             <ul>
@@ -92,7 +96,7 @@
                         <td> hot SI cute </td>
                     </tr>
                     <tr>
-                        <th><time datetime="2018-11-29">29 Noiemrbriee</time></th>
+                        <th class='centertext'><time datetime="2018-11-29">29 Noiemrbriee</time></th>
                         <td>
                             <ul>
                                 <li>Inceputuriile<sup>&#8482;</sup></li>
@@ -103,14 +107,14 @@
                         <td>eehh dar are potential</td>
                     </tr>
                     <tr>
-                        <th><time datetime="2018-12-12">12 Decembrie</time></th>
+                        <th class='centertext'><time datetime="2018-12-12">12 Decembrie</time></th>
                         <td> Hai ca era mai misto <a href="https://twitter.com/jacksfilms/status/1063492534821806081"
                                 target="_blank">Grinciulet</a></td>
-                        <td>BAAAA =)))</td>
+                        <td>"BAAAA" =)))</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <th><time datetime="2018-12-19">19 Decembrie</time></th>
+                        <th class='centertext'><time datetime="2018-12-19">19 Decembrie</time></th>
                         <td> primu pupix ;) </td>
                         <td>do me</td>
                         <td>fuuuck da</td>
@@ -189,10 +193,11 @@
         <img src="best best ring.jpg" alt="inel dragut" id='pozainel'>
         <hr>
         <section>
-            <h1>Heyy ia spune-mi de care pizza ai vrea si ce culoare sa fiee <sup>(completeaza numele parola si data ca
+            <h1>Heyy ia spune-mi de care pizza ai vrea si ce culoare sa fiee <sup>(completeaza
+                    numele parola si data ca
                     sa faci cont)</sup>
             </h1>
-            <form action="/pizza">
+            <form class="center" action="/pizza">
                 <p>
                 <div>
                     <label for="marime">Cat de mare vrei pizza?</label> <br>
@@ -252,7 +257,8 @@
                     <p><label for="email">Email-ul</label><input type="email" id="email" name="email"></p>
                     <p>
                         <label for="zi">Click pt ziua de nastere </label>
-                        <input name="zi" id="zi" placeholder="Ziua lui bebelus" type='date'> <button type="button">Buton
+                        <input name="zi" id="zi" placeholder="Ziua lui bebelus" type='date'> <button class='bghide'
+                            type="button">Buton
                             care nu face
                             nimic</button>
                     </p>
@@ -290,57 +296,48 @@
                 <button id='submit'>BOOM shakalaka comand-o acm</button>
             </form>
         </section>
-        <br><br><br><br> <br> <br><br>
+        <br><br><br>
 
-        <fieldset>
-            <legend>Vrei kepap de peste?</legend>
-            <div> <label for="da">a) Da</label><input type="radio" value="da" name="dasauda" id="da">
-            </div>
-            <div>
-                <label for="nu">b) Da</label><input type="radio" value="al doilea da" name="dasauda" id="nu">
-            </div>
-            <div><label for="clarda">c): a) si b)</label><input type="checkbox" value="al treilea da" name="Clarda"
-                    id="clarda">
-            </div>
-        </fieldset>
+
         <hr>
         <H2>Mai multe inputuri</H2>
-        <form action="/lovesong">
-            <h3>Ia spune de fel de melodie ai avea chef?</h3>
+        <form class="dontmind" action="/lovesong">
+            <h3 id="melodie">Ia spune ce fel de melodie ai avea chef?</h3>
 
             <label for="love">De iubiree<label>
                     <input checked type="checkbox" name="love" id="love">
                     <label for="iubiricaa">De <b>iubiricaaa</b> ;))</label>
                     <input type="checkbox" name="iubiricaa" id="iubiricaa" checked>
                     <label for="happy">Fericita</label>
-                    <input type="checkbox" name="happy" id="happy">
+                    <input checked type="checkbox" name="happy" id="happy">
                     <label for="sad">Tristuta</label>
                     <input type="checkbox" name="sad" id="sad">
+                    <button>Submit it</button>
         </form>
-        <nav>
-            <h3>Mama de cand timp incerc sa fac rahaturiile astea sa mearga si era asa de simpluu</h3>
-            <form action="https://www.youtube.com/results">
+        <div class='hijack'>
+            <h3>Mama de cand timp incerc sa fac rahaturiile astea sa mearga si era asa de simpluu ༽◺_◿༼</h3>
+            <form class='center' action="https://www.youtube.com/results">
                 <input type="text" name='search_query' placeholder="Cauta pe youtube ceva">
                 <button>Cauta pe Youtube</button>
             </form>
-            <form action="https://www.reddit.com/search/">
+            <form class="center" action="https://www.reddit.com/search/">
                 <input type="text" name="q" placeholder="Cauta pe reddit">
                 <button>Cauta redditul</button>
             </form>
-            <form action="https://www.google.com/search">
+            <form class="center" action="https://www.google.com/search">
                 <input type="text" name="q" placeholder="Cauta pe google">
                 <button>Cauta Googleul</button>
             </form>
-            <form action="https://www.facebook.com/search">
+            <form class="center" action="https://www.facebook.com/search">
                 <input placeholder="Cauta pe facebuci" type="text" name="q" id="">
                 <button>Cauta pe facebook</button>
             </form>
-        </nav>
+        </div>
         <hr>
     </main>
     <div>
         <h2> Aici testez poze si atribute pentru poze =))</h2>
-        <figure> <img src="hollatta-red.jpg" alt="Me and my bebegirl">
+        <figure> <img id='bday' src="hollatta-red.jpg" alt="Me and my bebegirl">
             <figcaption>Me and my bebegirl</figcaption>
         </figure>
         <!-- NU DA ATRIBUTE DE MARIME DIRECT DIN HTML CA CICA E BAD PRATICE -->

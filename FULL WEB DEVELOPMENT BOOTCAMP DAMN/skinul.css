@@ -17,7 +17,7 @@ text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 
 }
 
 h2, h4,h5 {
-    color:  #1361df;
+    color:  #00b9a4;
   font-weight:  normal;
 letter-spacing: .15em;
 text-shadow: 1px -1px 0 #7676763a, -1px 2px 1px #7372721e, -2px 4px 1px #7674741f;
@@ -47,7 +47,6 @@ article {
 
 a {
     color:rgb(50, 131, 168) ;
-    font-weight: bold;
   text-decoration: none;
 }
 
@@ -55,7 +54,7 @@ a {
 
 
 h1 {
-    width: 80%;
+    text-align: center;
     letter-spacing: 5px;    
 }
 
@@ -84,18 +83,21 @@ sub {
     font-size: 8px;
 }
 
-h1+p {
-    text-align: start;
+input {
+    background-color: #ccfd9a;
+    color: #000;
+}
+
+table {
+    width: 100%;
+    height: 180%;
 }
 
 .centertext{ 
     text-align: center;
 }
 
-input {
-    background-color: #ccfd9a;
-    color: #000;
-}
+
 
 textarea {
     background-color: #dbeb4a;
@@ -109,6 +111,10 @@ textarea {
     background-color: inherit;
 }
 
+.bghide:hover {
+    background-color: #971a3cb0;
+}
+
 .dontmind {
     font-size: normal;
 }
@@ -116,6 +122,9 @@ textarea {
 #submit {
     background-color: #caffbf;
     background-color: #caffbf;
+}
+#submit:hover {
+    background-color: #971a3cb0;
 }
 
 
@@ -134,9 +143,6 @@ textarea {
     cursor: grab;
 }
 
-/* ul::marker {
-    text-align: right;
-} */
 
 th {
     text-align: center;
@@ -145,6 +151,11 @@ th {
 td {
     text-align: end;
 }
+
+select {
+    font-family: Minecraftia;
+}
+
 
 table ul {
     text-align: left;
@@ -167,6 +178,210 @@ table>thead {
     color: #3C3A3B ;
 }
 
+
+
 footer a {
-    color: red;
+    color: #fdffb6;
 }
+
+input[type='password'] {
+      background-color: #9bf6ff;
+}
+
+input[type='checkbox'] {
+      color: #ffc6ff;
+}
+
+form[action*='google'] ::placeholder {
+    color:#4285F4;
+    font-family: Roboto;
+     font-weight: 700;
+}
+form[action*='google'] input {
+    background-color:#F4B400;
+ color: #DB4437 ;
+ font-weight: 700;
+ font-family: Roboto;
+}
+
+form[action*='google'] button {
+     background-color: 	#0F9D58;
+     font-family: Roboto;
+     color: black;
+}
+form[action*='google'] button:hover {
+    background-color:black 	;
+    font-family: Roboto;
+    color: #0F9D58;
+
+}
+
+form[action*='reddit'] ::placeholder {
+    color:white;
+    font-family:verdana, arial, helvetica, sans-serif;
+     font-weight: 700;
+}
+form[action*='reddit'] input {
+    background-color:#FF4500;
+ color:BLACK ;
+ font-weight: 700;
+ font-family:verdana, arial, helvetica, sans-serif; 
+}
+
+form[action*='reddit'] button {
+     background-color: #FF4500;
+     font-family:verdana, arial, helvetica, sans-serif;
+     color: black;
+     }
+
+     form[action*='reddit'] button:hover {
+        background-color: black;
+        font-family:verdana, arial, helvetica, sans-serif;
+        color: #FF4500;
+        }
+   
+
+form[action*='youtube'] ::placeholder {
+    color:white;
+    font-family:Trade Gothic LT Std;
+     font-weight: 700;
+     font-weight: bold;
+}
+form[action*='youtube'] input {
+    background-color:#FF0000;
+ color:#282828 ;
+ font-weight: 700;
+ font-family:Trade Gothic LT Std; 
+ font-weight: bold;
+}
+
+form[action*='youtube'] button {
+     background-color: #FF0000;
+     font-family:Trade Gothic LT Std;
+     font-weight: bold;
+     color: #282828;
+}
+form[action*='youtube'] button:hover {
+    background-color: #282828;
+    font-family:Trade Gothic LT Std;
+    font-weight: bold;
+    color: #FF0000;
+}
+
+
+form[action*='facebook'] ::placeholder {
+    color:#FFFFFF;
+    font-family:Times New Roman;
+    font: Helvetica, Arial, sans-serif;
+     font-weight: 700;
+     font-weight: bold;
+}
+form[action*='facebook'] input {
+    background-color:#4267B2;
+ color:#FFFFFF ;
+ font-weight: 700;
+ font-family:Helvetica, Arial, sans-serif; 
+ font-weight: bold;
+}
+
+form[action*='facebook'] button {
+     background-color: #4267B2;
+     font-family:Helvetica, Arial, sans-serif;
+     font-weight: bold;
+     color: #FFFFFF;
+}
+form[action*='facebook'] button:hover {
+    background-color: #FFFFFF;
+    font-family:Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #4267B2;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+ input:not([type='checkbox']):not([type='radio']):not([type='color']):hover{
+   height: 20px;
+   width: 23%;
+}
+
+input[type='range']:hover {
+    height: 40px;
+}
+
+select:hover {
+    height: 35px;
+   width: 40%;
+}
+
+
+form[action*='youtube'] button:active {
+      background-color: blanchedalmond;
+}
+
+form[action*='reddit'] button:active {
+    background-color: blanchedalmond;
+}
+
+form[action*='google'] button:active {
+    background-color: blanchedalmond;
+}
+
+form[action*='facebook'] button:active {
+    background-color: blanchedalmond;
+}
+
+button:active {
+    height: 35px;
+    width: 100px;
+}
+
+input:active {
+    background-color: red;
+}
+
+li a:nth-of-type(3n) {
+    color:rgb(19, 27, 31) ;
+}
+
+ tbody tr:nth-of-type(2n-1) {
+    background-color: #a30f39b0;
+}
+
+a:active {
+    height: 200px;
+}
+
+button:active  {
+    height:70%;
+    width: 20%;
+}
+button:hover  {
+   background-color:#ec114fb0;
+}
+
+p::first-letter {
+    font-size: 130%;
+}
+
+header :not(p)::first-line {
+    text-decoration: underline;
+}
+
+/* aaaa stiii tu ce vreau sa fac aici */
+
+ header>p:nth-of-type(1):first-line, section>p:nth-of-type(1)::first-line,article>p:nth-of-type(1):first-line {
+    text-decoration: underline;
+}
+
+*::selection {
+    background-color: #89cff0;
+    color: yellow;
+}
+
+/* nu uita sa vezi de ce face butonul de DE IUBIRREEE sa se selecteze cand apesi oriunde pe acol canu are niciun sens efectiv */
+
+
+

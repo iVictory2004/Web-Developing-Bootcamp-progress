@@ -13,7 +13,8 @@
         <h1> <span class="superpink"> Bebeee </span> fac pe fisierul asta tot cursul pentru
             tinee sa
             vezii:DD</h1>
-        <p id='inceput'> Bine ai venit pe pagina mea facuta cu ce stiu din bootcampu astaa, destul de simpla da nu e bai
+        <p id='inceput'> <span>Bine</span> ai venit pe pagina mea facuta cu ce stiu din bootcampu astaa, destul de
+            simpla da nu e bai
             ca o sa fie
             frumos si o sa vezi treptat cum evoluarez in timp ce ti dau parta probabil poate <span class="superpink">
                 =)))</span> <br><br>
@@ -22,6 +23,7 @@
         <hr>
     </header>
 
+    <nav>Cauta chestii pe site</nav>
     <main>
         <section>
             <h2>Originea</h2>
@@ -62,7 +64,7 @@
                     <tr class='centertext'>
                         <th rowspan="2">Data</th>
                         <th rowspan="2">Ce-am facut</th>
-                        <th colspan="2"> Alinturi din perioada</th>
+                        <th colspan="2" class="roundcorner"> Alinturi din perioada</th>
                     </tr>
                     <tr class='centertext'>
                         <th>Cel mai comun?</th>
@@ -129,6 +131,7 @@
             <ul>
                 <li><a target="_blank"
                         href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.emag.ro%2Fsupermarket%2Fguma-de-mestecat-watermelon-10-drajeuri-14g-orbit-37442%2Fpd%2FDZYP1BBBM%2F&psig=AOvVaw2CO7Gd4Ekz7ade3N7U-_wG&ust=1606586407012000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPiiyfKmo-0CFQAAAAAdAAAAABAD">Cingo</a>
+                    <span></span>
                 </li>
                 <li><a target="_blank" href='https://www.youtube.com/watch?v=xuCn8ux2gbs'>IISTORIA LUMII
                         BEBE</a>
@@ -198,17 +201,18 @@
                     sa faci cont)</sup>
             </h1>
             <form class="center" action="/pizza">
-                <p>
+
                 <div>
-                    <label for="marime">Cat de mare vrei pizza?</label> <br>
-                    <input type="radio" value="X" name="marime" id="X">
-                    <label for="X">X</label>
-                    <br>
-                    <input value="XL" type="radio" name="marime" id="XL">
-                    <label for="XL">XL</label>
-                    <br>
-                    <input value="XXL" type="radio" name="marime" id="XXL">
-                    <label for="XXL">XXLL</label>
+                    <p>
+                        <label for="marime">Cat de mare vrei pizza?</label> <br>
+                        <input type="radio" value="X" name="marime" id="X">
+                        <label for="X">X</label>
+                        <br>
+                        <input value="XL" type="radio" name="marime" id="XL">
+                        <label for="XL">XL</label>
+                        <br>
+                        <input value="XXL" type="radio" name="marime" id="XXL">
+                        <label for="XXL">XXLL</label>
                     </p>
                     <p>
                         <label for="numar"> Cate pizze? </label>
@@ -226,11 +230,10 @@
 
 
                     <p>
-                        <label for="topping-ammount">Cat de mult toping?</label>
-                        0 <input type="range" name="topping-ammount" id="topping-ammount" min="0" max="100" step='5'
-                            value="10">
-                        100 (grame
-                        cred)
+                        <label for="topping-ammount">Cat de mult toping? 0</label><input type="range"
+                            name="topping-ammount" id="topping-ammount" min="0" max="100" step='5' value="10"><label
+                            for="topping-ammount"> 100 (grame
+                            cred)</label>
                     </p>
                     <!-- fa ceva cu checkboxes care nu sunt radio aici ca ar merge si sa stii si tu ce drq faci -->
                     <p>
@@ -254,7 +257,8 @@
                         <input id='parola' placeholder="parola lui bebe" type='password' name='parola' required
                             minlength="8" maxlength="42">
                     </p>
-                    <p><label for="email">Email-ul</label><input type="email" id="email" name="email"></p>
+                    <p><label for="email">Email-ul</label><input type="email" id="email" name="email"
+                            placeholder="Emailul lui bebe"></p>
                     <p>
                         <label for="zi">Click pt ziua de nastere </label>
                         <input name="zi" id="zi" placeholder="Ziua lui bebelus" type='date'> <button class='bghide'
@@ -293,7 +297,9 @@
                         <input type="checkbox" value="errotica" name="brand" id="errotica">
                     </div>
                 </fieldset>
-                <button id='submit'>BOOM shakalaka comand-o acm</button>
+
+                <input type="file" placeholder="Ia trimie mi si o poza de la tine din pc ca merge asta =))">
+                <div><button id='submit'>BOOM shakalaka comand-o acm</button></div>
             </form>
         </section>
         <br><br><br>
@@ -304,15 +310,16 @@
         <form action="/lovesong">
             <h3 id="melodie">Ia spune ce fel de melodie ai avea chef?</h3>
 
-            <label for="love">De iubiree<label>
-                    <input checked type="checkbox" name="love" id="love">
-                    <label for="iubiricaa">De <b>iubiricaaa</b> ;))</label>
-                    <input type="checkbox" name="iubiricaa" id="iubiricaa" checked>
-                    <label for="happy">Fericita</label>
-                    <input checked type="checkbox" name="happy" id="happy">
-                    <label for="sad">Tristuta</label>
-                    <input type="checkbox" name="sad" id="sad">
-                    <button>Submit it</button>
+            <label for="love">De iubiree</label>
+            <input checked type="checkbox" name="love" id="love">
+            <label for="iubiricaa">De <b>iubiricaaa</b> ;))</label>
+            <input type="checkbox" name="iubiricaa" id="iubiricaa" checked>
+            <label for="happy">Fericita</label>
+            <input checked type="checkbox" name="happy" id="happy">
+            <label for="sad">Tristuta</label>
+            <input type="checkbox" name="sad" id="sad">
+            <button>Submit it</button>
+
         </form>
         <div class='hijack'>
             <h3>Mama de cand timp incerc sa fac rahaturiile astea sa mearga si era asa de simpluu ༽◺_◿༼</h3>
@@ -337,7 +344,7 @@
     </main>
     <div>
         <h2> Aici testez poze si atribute pentru poze =))</h2>
-        <figure> <img id='bday' src="hollatta-red.jpg" alt="Me and my bebegirl">
+        <figure class="bday"> <img id='bday' src="hollatta-red.jpg" alt="Me and my bebegirl">
             <figcaption>Me and my bebegirl</figcaption>
         </figure>
         <!-- NU DA ATRIBUTE DE MARIME DIRECT DIN HTML CA CICA E BAD PRATICE -->
@@ -362,6 +369,15 @@
         </ul>
 
     </footer>
+
+    <div class="hue1">i</div>
+    <div class="hue2">d</div>
+    <div class="hue3">k</div>
+    <div class="hue4">c</div>
+    <div class="hue5">o</div>
+    <div class="hue6">o</div>
+    <div class="hue7">i</div>
+
 </body>
 
 </html>

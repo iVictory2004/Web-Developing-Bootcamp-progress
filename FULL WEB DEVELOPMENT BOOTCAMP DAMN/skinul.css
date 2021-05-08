@@ -7,13 +7,19 @@
     font-family: Minecraftia;
     text-align: center;
     background-color: #fc8eabb0;
+    margin: 0;
   }
 
 header {
-    background-color: #fc8eabb0;
+background-color: burlywood;
     color: #4D0F4D	;
     color: #444444;
 text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+border-width: 5px;
+border-color:#9bf6ff ;
+border-style: dotted;
+padding: 0px 100px 0px 100px;
+text-align: center;
 }
 
 h2, h4,h5 {
@@ -46,22 +52,20 @@ article {
 
 
 a {
-    color:rgb(50, 131, 168) ;
+    color:rgb(50, 131, 168);
   text-decoration: none;
 }
 
-
-
-
 h1 {
-    text-align: center;
+ text-align: center;
     letter-spacing: 5px;    
+    width: 700px;
 }
 
 img {
     height: 30%;
     width : 60%;
-    align-self: center;
+
 }
 
 button {
@@ -77,8 +81,6 @@ footer {
     font-family: monospace, fantasy ;
 }
 
-
-
 sub {
     font-size: 8px;
 }
@@ -86,18 +88,26 @@ sub {
 input {
     background-color: #ccfd9a;
     color: #000;
+    margin: auto;
 }
 
 table {
     width: 100%;
     height: 180%;
+    border-radius: 3% 10%;
+    border-width: 20px;
+    border-style: groove;
+    border-color: rgb(231, 29, 231);
+}
+
+video {
+ width: 50%;
+ border-radius: 15px;
 }
 
 .centertext{ 
     text-align: center;
 }
-
-
 
 textarea {
     background-color: #dbeb4a;
@@ -127,7 +137,6 @@ textarea {
     background-color: #971a3cb0;
 }
 
-
 #melodie {
     font-size: 30px;
     font-family: Brush Script MT;
@@ -139,17 +148,37 @@ textarea {
     object-position: 50% 50%;
 }
 
-#bday {
-    cursor: grab;
+.bday {
+border-width: 10px;
+border-style:solid;
+border-color:  #9bf6ff;
+border-radius: 20%;
 }
 
+#bday {
+    cursor: grab;
+    border-radius: 20px;
+}
+
+#bday:active {
+ cursor: grabbing;
+}
 
 th {
     text-align: center;
 }
 
-td {
-    text-align: end;
+td,th {
+    text-align: center;
+    border-collapse:collapse;
+    border-style: outset;
+    border-color: coral;
+    border-radius: 12%;
+
+}
+
+.roundcorner {
+    border-radius:  12% 5%;
 }
 
 select {
@@ -170,7 +199,7 @@ table ul {
     color: #ff007f;
 }
 
-#inceput p span {
+#inceput span{
     text-decoration: overline underline wavy;
 }
 
@@ -178,11 +207,27 @@ table>thead {
     color: #3C3A3B ;
 }
 
+header + nav {
+    border-radius: 30px;
+    border-collapse: collapse;
+    width:fit-content;
+  margin: auto;
+}
 
+
+
+nav {
+    border-width: 30%;
+    border-radius:5% ;
+border-style: solid;
+box-sizing: content-box;
+border-color: rgb(231, 29, 231);
+}
 
 footer a {
     color: #fdffb6;
 }
+
 
 input[type='password'] {
       background-color: #9bf6ff;
@@ -194,8 +239,9 @@ input[type='checkbox'] {
 
 form[action*='google'] ::placeholder {
     color:#4285F4;
-    font-family: Roboto;
+    font: Roboto;
      font-weight: 700;
+     padding: 20px;
 }
 form[action*='google'] input {
     background-color:#F4B400;
@@ -220,6 +266,8 @@ form[action*='reddit'] ::placeholder {
     color:white;
     font-family:verdana, arial, helvetica, sans-serif;
      font-weight: 700;
+     padding:45px ;
+     
 }
 form[action*='reddit'] input {
     background-color:#FF4500;
@@ -246,6 +294,7 @@ form[action*='youtube'] ::placeholder {
     font-family:Trade Gothic LT Std;
      font-weight: 700;
      font-weight: bold;
+     padding: 20px;
 }
 form[action*='youtube'] input {
     background-color:#FF0000;
@@ -272,9 +321,10 @@ form[action*='youtube'] button:hover {
 form[action*='facebook'] ::placeholder {
     color:#FFFFFF;
     font-family:Times New Roman;
-    font: Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
      font-weight: 700;
      font-weight: bold;
+     padding: 20px;
 }
 form[action*='facebook'] input {
     background-color:#4267B2;
@@ -302,20 +352,14 @@ a:hover {
     font-weight: bold;
 }
 
- input:not([type='checkbox']):not([type='radio']):not([type='color']):hover{
-   height: 20px;
-   width: 23%;
+ input:not([type='checkbox']):not([type='radio']):not([type='color']):not([type='file']):hover{
+   height: +23px;
+   width: 24%;
 }
 
 input[type='range']:hover {
     height: 40px;
 }
-
-select:hover {
-    height: 35px;
-   width: 40%;
-}
-
 
 form[action*='youtube'] button:active {
       background-color: blanchedalmond;
@@ -333,13 +377,13 @@ form[action*='facebook'] button:active {
     background-color: blanchedalmond;
 }
 
-button:active {
-    height: 35px;
-    width: 100px;
-}
+/* button:active {
+    height: 30%;
+    width: 10%;
+} */
 
-input:active {
-    background-color: red;
+input:active::placeholder {
+   color: red;
 }
 
 li a:nth-of-type(3n) {
@@ -366,14 +410,16 @@ p::first-letter {
     font-size: 130%;
 }
 
-header :not(p)::first-line {
+html p:nth-of-type(1)::first-line {
     text-decoration: underline;
 }
 
-/* aaaa stiii tu ce vreau sa fac aici */
+form p::first-line {
+    text-decoration: none;
+}
 
- header>p:nth-of-type(1):first-line, section>p:nth-of-type(1)::first-line,article>p:nth-of-type(1):first-line {
-    text-decoration: underline;
+label {
+    user-select: none;
 }
 
 *::selection {
@@ -381,7 +427,111 @@ header :not(p)::first-line {
     color: yellow;
 }
 
-/* nu uita sa vezi de ce face butonul de DE IUBIRREEE sa se selecteze cand apesi oriunde pe acol canu are niciun sens efectiv */
+*::file-selector-button {
+    text-decoration: underline;
+    font-family: Minecraftia;
+}
+*::-webkit-file-upload-button {
+    text-decoration: underline;
+    font-family: Minecraftia;
+}
+
+
+a:visited {
+     color:rgba(15, 83, 172, 0.315);
+     text-decoration: overline;
+  }
+
+  a:visited:hover {
+    color: gray;
+    text-decoration: overline;
+ }
+
+
+ a::after {
+     content: '🌐';
+ }
+
+ a::before {
+     content: '→';
+     color:rgb(0, 191, 255);
+ }
+
+.hue1 {
+    background-color: hsl(0, 88%, 49%) ;
+    color:hsl(90, 88%, 49%);
+}
+.hue2 {
+    background-color: hsl(15, 88%, 49%) ;
+    color:hsl(75, 88%, 49%);
+}
+.hue3 {
+    background-color: hsl(30, 88%, 49%) ;
+    color:hsl(60, 88%, 49%);
+}
+.hue4 {
+    background-color: hsl(45, 88%, 49%) ;
+    color:hsl(45, 88%, 49%);
+}
+.hue5 {
+    background-color: hsl(60, 88%, 49%) ;
+    color:hsl(30, 88%, 49%);
+}
+.hue6 {
+    background-color: hsl(75, 88%, 49%) ;
+    color:hsl(15, 88%, 49%);
+}
+.hue7 {
+    background-color: hsl(90, 88%, 49%) ;
+    color:hsl(0, 88%, 49%);
+}
+
+*[class*='hue']::selection {
+    color:inherit;
+    background-color: inherit;
+}
+
+button[class='bghide']:hover {
+    cursor: wait;
+}
+
+input[type='range']:hover {
+    cursor:w-resize;
+}
+
+select:hover {
+    cursor:cell;
+}
+
+button {
+    cursor: pointer;
+}
+
+form {
+    align-self: left;
+    margin: auto;
+}
+
+footer a:hover {
+    cursor:help;
+}
+
+article{
+    border-width: 15px;
+    border-radius: 50% 100px 500px;
+    width: 1400.85px;
+    border-color: cornflowerblue;
+border-style: groove dashed dotted dashed;
+   box-sizing:content-box;;
+padding: 30px 5px 20px 5px;
+margin: auto;
+}
+
+/* nu uita sa vezi de ce face butonul de DE IUBIRREEE sa se selecteze cand apesi oriunde pe acol canu are niciun sens efectiv (omgg l am rezolvatt cum draccuu */
+
+/* inline sttyle urile sunt cel mai specifice si adica nu are niciun sens sa le folosesti ca e doar hamfisting the style into the shit */
+
+/* si nici !important sa nu folosesti prea mult ca doar da drq tot sistemu, decat daca lucrezi cu ceva library caren uprea stii cum merge si vrei doar sa faci ce vrei tu sa faci fara sa vb cu nimeni */
 
 
 

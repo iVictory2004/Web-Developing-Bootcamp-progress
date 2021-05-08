@@ -1,0 +1,28 @@
+* div {
+    width: 200px;
+    height: 200px;
+    background-color:#fcd5ce ;
+    color: rgb(88, 32, 11);
+    margin: 10px 50px 20px ;
+}
+
+.div1 {
+    border-width: 25px;
+    border-color: cornflowerblue;
+  border-style:inset;
+  border-radius: 10% / 25%;
+
+}
+ 
+* {
+    overflow:scroll; 
+}
+
+
+.div2 {
+    border-color: orange ;
+        border-width: 30px;
+        border-style:double;
+        box-sizing:unset;
+        border-radius:70% ;
+}

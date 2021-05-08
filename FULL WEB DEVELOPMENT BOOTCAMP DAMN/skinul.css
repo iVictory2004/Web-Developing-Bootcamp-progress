@@ -37,6 +37,10 @@ h3 {
 letter-spacing: .15em;
 }
 
+.center {
+    text-align: center;
+}
+
 abbr {
     text-decoration: underline overline;
     text-decoration-color: rgb(167, 24, 107);
@@ -60,6 +64,7 @@ h1 {
  text-align: center;
     letter-spacing: 5px;    
     width: 700px;
+  margin: auto;
 }
 
 img {
@@ -119,6 +124,10 @@ textarea {
 
 .bghide {
     background-color: inherit;
+}
+
+.searchbar{
+    margin-left: 85%;
 }
 
 .bghide:hover {

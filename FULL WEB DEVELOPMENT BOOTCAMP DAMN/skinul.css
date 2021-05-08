@@ -77,7 +77,6 @@ button {
     background-color: #bdb2ff ;
 }
 
-
 mark {
     text-decoration: underline ;
 }
@@ -97,17 +96,32 @@ input {
 }
 
 table {
-    width: 100%;
-    height: 180%;
+ width: 100%;
+ max-width: 1184.4px;
+ height: 100%;
     border-radius: 3% 10%;
     border-width: 20px;
     border-style: groove;
     border-color: rgb(231, 29, 231);
+    background-color: #ffe8d6;
+ margin-top: 10%;
+line-height: 150%;
+/* stai calm capitane */
+ /* margin-left: max(300px, 35%); */
+ /* ca o sa-ti iasa tie candva sa schimbi marginea in functie de marimea ecranuui */
+}
+
+.datiimportante {
+    margin:5px auto;
 }
 
 video {
  width: 50%;
  border-radius: 15px;
+}
+
+.normal {
+    margin:0;
 }
 
 .centertext{ 
@@ -246,6 +260,14 @@ input[type='checkbox'] {
       color: #ffc6ff;
 }
 
+form[action*='https://www.'] {
+    display: block;
+    padding-left:300px ;
+    margin-bottom: 50px;
+    border-top: solid rgb(66, 60, 60) 1px ;
+    text-align: start;
+}
+
 form[action*='google'] ::placeholder {
     color:#4285F4;
     font: Roboto;
@@ -283,6 +305,7 @@ form[action*='reddit'] input {
  color:BLACK ;
  font-weight: 700;
  font-family:verdana, arial, helvetica, sans-serif; 
+   margin-left: 0px;
 }
 
 form[action*='reddit'] button {
@@ -363,7 +386,8 @@ a:hover {
 
  input:not([type='checkbox']):not([type='radio']):not([type='color']):not([type='file']):hover{
    height: +23px;
-   width: 24%;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 input[type='range']:hover {
@@ -542,5 +566,7 @@ margin: auto;
 
 /* si nici !important sa nu folosesti prea mult ca doar da drq tot sistemu, decat daca lucrezi cu ceva library caren uprea stii cum merge si vrei doar sa faci ce vrei tu sa faci fara sa vb cu nimeni */
 
+
+/* marimea marginii e dublata DOAR cand elementele stau una langa alta, nu atunci cand sunt unap este alta (nu se adauga topu si bottomu), doar left u si rightu, top si bottom se fac doar overlapping la valoarea mai mare, aia care e mai mare castiga ca si cum cand e sus jos */
 
 

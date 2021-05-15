@@ -10,6 +10,11 @@
     margin: 0;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
 header {
 background-color: burlywood;
     color: #4D0F4D	;
@@ -106,6 +111,7 @@ table {
     background-color: #ffe8d6;
  margin-top: 10%;
 line-height: 150%;
+margin: auto;
 /* stai calm capitane */
  /* margin-left: max(300px, 35%); */
  /* ca o sa-ti iasa tie candva sa schimbi marginea in functie de marimea ecranuui */
@@ -141,7 +147,9 @@ textarea {
 }
 
 .searchbar{
-    margin-left: 85%;
+    position:sticky;
+    top: 5px;
+    margin-left:85% ;
 }
 
 .bghide:hover {
@@ -470,10 +478,37 @@ label {
 }
 
 
+.backup {
+    position: sticky;
+    top: 5px;
+    right: 90%;
+   color: #00b9a4; 
+   font-weight: bolder;
+}
+
+.backup::before {
+    content: none;
+}
+
+.backup::after {
+    content: none;
+}
+
+.backup:visited {
+    color:rgba(0, 0, 255, 0.575)  ;
+}
+
+.backup:hover {
+    color: blue;
+    
+}
+
 a:visited {
      color:rgba(15, 83, 172, 0.315);
      text-decoration: overline;
   }
+
+
 
   a:visited:hover {
     color: gray;
@@ -560,7 +595,7 @@ padding: 30px 5px 20px 5px;
 margin: auto;
 }
 
-/* nu uita sa vezi de ce face butonul de DE IUBIRREEE sa se selecteze cand apesi oriunde pe acol canu are niciun sens efectiv (omgg l am rezolvatt cum draccuu */
+/* nu uita sa vezi de ce face butonul de DE IUBIRREEE sa se selecteze cand apesi oriunde pe acol canu are niciun sens efectiv (omgg l am rezolvatt cum draccuu) */
 
 /* inline sttyle urile sunt cel mai specifice si adica nu are niciun sens sa le folosesti ca e doar hamfisting the style into the shit */
 

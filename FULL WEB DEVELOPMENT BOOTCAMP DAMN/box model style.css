@@ -6,13 +6,34 @@
    font-weight: bold;
 }
 
+html {
+    font-size:20px ;
+}
+
 h1 {
     background-color: blueviolet;
 border: 5px  rgb(105, 96, 96) solid;
 box-sizing:border-box;
-width: 300px;
+width: 10rem;
 padding: 30px;
 margin: 10px;
+
+}
+
+.magenta {
+      height:400px ;
+      width: 400px;
+      background-color: magenta;
+      margin: 3rem;
+      opacity: 0.3;
+}
+
+.othermagenta {
+    background-color: rgba(255, 0, 255, 0.281);
+    height:200px ;
+    width: 200px;
+    margin: 3rem;
+    margin-bottom: 20rem;
 }
 
 img {
@@ -24,6 +45,22 @@ img {
 }
 p {
     margin: 50px;
+    font-size: 2rem;
+    background-color: #36393f00;
+}
+
+
+
+button{
+ border-radius: 3rem;
+    margin: 2rem;
+    font-size:2rem;
+    border: dashed yellow 2px;
+    opacity: 0.5;
+}
+
+button:active {
+    border-style: none;
 }
 
 span {
@@ -31,6 +68,7 @@ span {
     border:1px solid black;
     display:inline-block;
     height: 30px;
+    font-size: 1.5em;
 }
 
 .testdiv {
@@ -41,10 +79,52 @@ span {
     border-color: palevioletred;
     border-style: inset;
 display: inline-block;
-    margin: 1cm 0 1cm 1cm;
+    margin: 1em;
 
+}
+
+div:nth-of-type(2n) {
+    background-color: #36393f;
+}
+
+.testdiv:nth-of-type(2n) {
+    position: static;
+}
+
+.relative {
+    height: 200px;
+    width: 200px;
+    background-color: paleturquoise;
+    border-width: 10px;
+    border-color: palevioletred;
+    border-style: inset;
+display: inline-block;
+    margin: 1em;
+}
+.relative:nth-of-type(2n) {
+    position: relative;
+
+    top:100px;
+    left: 50px;
+}
+
+.absolute:nth-of-type(2n) {
+    position: absolute;
+  top:10px;
 }
 
 div {
     border-top: 1px solid rgb(179, 174, 174);
+    height: 200px;
+    width: 200px;
+    background-color: paleturquoise;
+    border-width: 10px;
+    border-color: palevioletred;
+    border-style: inset;
+display: inline-block;
+    margin: 1em;
+}
+
+ul {
+    font-size: 2rem;
 }

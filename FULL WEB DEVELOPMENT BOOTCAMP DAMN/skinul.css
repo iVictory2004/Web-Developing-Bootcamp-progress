@@ -7,7 +7,7 @@
     font-family: Minecraftia;
     text-align: center;
     background-color: #fc8eabb0;
-    margin: 0;
+    font-size: 1rem
   }
 
 header {
@@ -35,10 +35,12 @@ h3 {
    font-family: Minecraftia;
   font-weight:  normal;
 letter-spacing: .15em;
+font-size: 2em;
 }
 
 .center {
     text-align: center;
+    margin: auto;
 }
 
 abbr {
@@ -47,12 +49,7 @@ abbr {
     text-decoration-style: wavy;
 }
 
-article {
-    text-align: center;
-    line-height: 40px;
-    font-size: 29px;
-    font-family: Minecraftia, Brush Script MT ;
-}
+
 
 
 a {
@@ -67,12 +64,16 @@ h1 {
   margin: auto;
 }
 
+figure {
+    background-color: rgba(117, 6, 117, 0.3);
+    margin: auto;
+}
+
+
 img {
     height: 30%;
     width : 60%;
-
 }
-
 button {
     background-color: #bdb2ff ;
 }
@@ -86,7 +87,7 @@ footer {
 }
 
 sub {
-    font-size: 8px;
+    font-size: 0.6rem;
 }
 
 input {
@@ -106,9 +107,7 @@ table {
     background-color: #ffe8d6;
  margin-top: 10%;
 line-height: 150%;
-/* stai calm capitane */
- /* margin-left: max(300px, 35%); */
- /* ca o sa-ti iasa tie candva sa schimbi marginea in functie de marimea ecranuui */
+margin: auto;
 }
 
 .datiimportante {
@@ -141,15 +140,22 @@ textarea {
 }
 
 .searchbar{
-    margin-left: 85%;
+    font-size: 1rem;
+    width:fit-content;
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  margin-left: 50%;
+border-style: none;
 }
+
 
 .bghide:hover {
     background-color: #971a3cb0;
 }
 
 .dontmind {
-    font-size: normal;
+    font-size: 1rem;
 }
 
 #submit {
@@ -161,7 +167,6 @@ textarea {
 }
 
 #melodie {
-    font-size: 30px;
     font-family: Brush Script MT;
 }
 
@@ -215,7 +220,7 @@ table ul {
 
 ::placeholder {
     font-family: Minecraftia;
-    font-size: 85%;
+    font-size: 0.85rem;
 }
 
  .superpink{
@@ -230,12 +235,7 @@ table>thead {
     color: #3C3A3B ;
 }
 
-header + nav {
-    border-radius: 30px;
-    border-collapse: collapse;
-    width:fit-content;
-  margin: auto;
-}
+
 
 
 
@@ -440,7 +440,7 @@ button:hover  {
 }
 
 p::first-letter {
-    font-size: 130%;
+    font-size: 1.8rem;
 }
 
 html p:nth-of-type(1)::first-line {
@@ -551,13 +551,17 @@ footer a:hover {
 
 article{
     border-width: 15px;
-    border-radius: 50% 100px 500px;
+    border-radius: 50%  2em 30em;
     width: 1400.85px;
     border-color: cornflowerblue;
 border-style: groove dashed dotted dashed;
    box-sizing:content-box;;
-padding: 30px 5px 20px 5px;
+padding: 30px 2em 20px 2em;
 margin: auto;
+text-align: center;
+line-height: 1.2rem;
+font-size: 1rem;
+font-family: Minecraftia, Brush Script MT ;
 }
 
 /* nu uita sa vezi de ce face butonul de DE IUBIRREEE sa se selecteze cand apesi oriunde pe acol canu are niciun sens efectiv (omgg l am rezolvatt cum draccuu */

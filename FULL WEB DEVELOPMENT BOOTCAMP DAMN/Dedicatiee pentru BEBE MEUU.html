@@ -23,9 +23,19 @@
         <hr>
     </header>
 
-    <nav class="searchbar">Cauta chestii pe site</nav>
+    <nav class="searchbar"> <select name="search" id="search">
+            <option value="" name='select'>--Cauta Ceva pe site aicii--</option>
+            <option value="section1" name="secton1"><a href="#originea">Originea</a></option>
+            <option value="section2" name="secton2"><a href="#datiimportante">Dati importante</a></option>
+            <option value="section3" name="secton3"><a href="#poezie">Poeziaa</a>
+            </option>
+            <option value="section4" name="secton4"><a href="#pizza">Comanda Pizzzzaaaa</a></option>
+            <option value="section5" name="secton5"><a href="#pizza">Cauta chestii pe siteuri</a></option>
+            <option value="section6" name="secton6"></option>
+            <option value="section7" name="secton7"></option>
+        </select> </nav>
     <main>
-        <section>
+        <section id="originea">
             <h2>Originea</h2>
             <p>Prima si prima data m am gandit sa fac si eu asta cu <a href='site bebe folder\site bebe.html'
                     target='_blank'>proiectul
@@ -57,7 +67,7 @@
 
         </section>
         <hr>
-        <section class="normal">
+        <section class="normal" id="datiimportante">
             <h2 class="datiimportante"> Cele mai importante <b>dăți</b> (ordine cronologica)</h2>
             <table>
                 <thead>
@@ -163,7 +173,7 @@
         </nav>
 
         <hr>
-        <article>
+        <article class="center" id="poezie">
             <h3><abbr title='Te Iubesc Așa De Tare Bebe Meu Dulce Și Scump '>TIADTBMDȘS</abbr></h3>
             Bebelus eu te iubesc <br>
             Fara tin' nu pot sa traiesc<br>
@@ -195,7 +205,7 @@
         <h1 id='inel'>Heyy acum ca ai citit poezia, vrei sa ne casatorim? :DDDDDDDDD</h1>
         <img src="best best ring.jpg" alt="inel dragut" id='pozainel'>
         <hr>
-        <section>
+        <section id="pizza">
             <h1>Heyy ia spune-mi de care pizza ai vrea si ce culoare sa fiee <sup>(completeaza
                     numele parola si data ca
                     sa faci cont)</sup>
@@ -306,39 +316,41 @@
 
 
         <hr>
-        <H2>Mai multe inputuri</H2>
-        <form action="/lovesong">
-            <h3 id="melodie">Ia spune ce fel de melodie ai avea chef?</h3>
+        <div id="cautasiteuri">
+            <H2>Mai multe inputuri</H2>
+            <form action="/lovesong">
+                <h3 id="melodie">Ia spune ce fel de melodie ai avea chef?</h3>
 
-            <label for="love">De iubiree</label>
-            <input checked type="checkbox" name="love" id="love">
-            <label for="iubiricaa">De <b>iubiricaaa</b> ;))</label>
-            <input type="checkbox" name="iubiricaa" id="iubiricaa" checked>
-            <label for="happy">Fericita</label>
-            <input checked type="checkbox" name="happy" id="happy">
-            <label for="sad">Tristuta</label>
-            <input type="checkbox" name="sad" id="sad">
-            <button>Submit it</button>
+                <label for="love">De iubiree</label>
+                <input checked type="checkbox" name="love" id="love">
+                <label for="iubiricaa">De <b>iubiricaaa</b> ;))</label>
+                <input type="checkbox" name="iubiricaa" id="iubiricaa" checked>
+                <label for="happy">Fericita</label>
+                <input checked type="checkbox" name="happy" id="happy">
+                <label for="sad">Tristuta</label>
+                <input type="checkbox" name="sad" id="sad">
+                <button>Submit it</button>
 
-        </form>
-        <div class='hijack'>
-            <h3>Mama de cand timp incerc sa fac rahaturiile astea sa mearga si era asa de simpluu ༽◺_◿༼</h3>
-            <form class='' action="https://www.youtube.com/results">
-                <input type="text" name='search_query' placeholder="Cauta pe youtube ceva">
-                <button>Cauta pe Youtube</button>
             </form>
-            <form class="" action="https://www.reddit.com/search/">
-                <input type="text" name="q" placeholder="Cauta pe reddit">
-                <button>Cauta redditul</button>
-            </form>
-            <form class="" action="https://www.google.com/search">
-                <input type="text" name="q" placeholder="Cauta pe google">
-                <button>Cauta Googleul</button>
-            </form>
-            <form class="" action="https://www.facebook.com/search">
-                <input placeholder="Cauta pe facebuci" type="text" name="q" id="">
-                <button>Cauta pe facebook</button>
-            </form>
+            <div class='hijack'>
+                <h3>Mama de cand timp incerc sa fac rahaturiile astea sa mearga si era asa de simpluu ༽◺_◿༼</h3>
+                <form class='' action="https://www.youtube.com/results">
+                    <input type="text" name='search_query' placeholder="Cauta pe youtube ceva">
+                    <button>Cauta pe Youtube</button>
+                </form>
+                <form class="" action="https://www.reddit.com/search/">
+                    <input type="text" name="q" placeholder="Cauta pe reddit">
+                    <button>Cauta redditul</button>
+                </form>
+                <form class="" action="https://www.google.com/search">
+                    <input type="text" name="q" placeholder="Cauta pe google">
+                    <button>Cauta Googleul</button>
+                </form>
+                <form class="" action="https://www.facebook.com/search">
+                    <input placeholder="Cauta pe facebuci" type="text" name="q" id="">
+                    <button>Cauta pe facebook</button>
+                </form>
+            </div>
         </div>
         <hr>
     </main>
